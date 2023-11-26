@@ -58,4 +58,4 @@ io.on("connection", (socket) => {
 });
 
 // routes
-app.get("/", (req, res) => res.render("home"));
+app.get("/", (req, res) => res.send("home"));

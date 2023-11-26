@@ -2,6 +2,7 @@ const User = require("../models/User");
 
 const signup = async (req, res) => {
   let { email } = req.body;
+  console.log("req body", req.body);
   try {
     const user = await User.findOne({
       email: email,
