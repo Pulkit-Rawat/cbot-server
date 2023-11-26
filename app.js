@@ -31,7 +31,6 @@ const main = async () => {
     await mongoose.connect(dbURI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true,
     });
     console.log("db connected");
   } catch (err) {
